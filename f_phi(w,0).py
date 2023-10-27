@@ -1,4 +1,4 @@
-x=[0,1,2,3,4,5,6,7,8,9]
+x=[0,999999999999]
 def d(n,a):
   f=n
   i=0
@@ -16,13 +16,15 @@ def expand(n,m):
     bp=[]
     k.pop()
     p=k[-1]
-    bp.append(l-2)
     while p>l-1:
       bp.append(p)
       k.pop()
       p=k[-1]
     delta=(l-1)-p
+    bp.insert(0,l-delta)
     i=1
+    bp.reverse()
+    bp.insert(0,l-delta-1)
     for i in range(m+1):
       k.extend(d(bp,delta))
       i+=1
