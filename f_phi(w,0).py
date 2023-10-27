@@ -1,5 +1,5 @@
 x=[0,1,2,3,4,5,6,7,8,9]
-def delta(n,a):
+def d(n,a):
   f=n
   i=0
   for i in range(len(n)):
@@ -18,13 +18,13 @@ def expand(n,m):
     p=k[-1]
     bp.append(p)
     while p>l-1:
-      bp.append(p)
+      bp.append(l-2)
       k.pop()
       p=k[-1]
-    delta=p-(l-1)
+    delta=(l-1)-p
     i=1
-    for i in range(a+1):
-      k.extend(delta(bp,delta*i))
+    for i in range(m+1):
+      k.extend(d(bp,delta))
       i+=1
     return k
 b=1
