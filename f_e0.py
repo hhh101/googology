@@ -14,6 +14,7 @@ def expand(n,m):
       bp.append(p)
       k.pop()
       p=k[-1]
+    bp.reverse()
     k.extend(bp*m)
     return k
 b=1
