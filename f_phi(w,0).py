@@ -16,9 +16,9 @@ def expand(n,m):
     bp=[]
     k.pop()
     p=k[-1]
-    bp.append(p)
+    bp.append(l-2)
     while p>l-1:
-      bp.append(l-2)
+      bp.append(p)
       k.pop()
       p=k[-1]
     delta=(l-1)-p
