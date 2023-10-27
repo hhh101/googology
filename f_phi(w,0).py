@@ -21,7 +21,6 @@ def expand(n,m):
       k.pop()
       p=k[-1]
     delta=(l-1)-p
-    bp.insert(0,l-delta)
     i=1
     bp.reverse()
     bp.insert(0,l-delta-1)
