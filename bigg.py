@@ -22,7 +22,7 @@ def f(n,x,m):
 b=3
 x=[-1,0,1]
 y=[-1,0,999]
-while x!=[]:
+while x!=[-1]:
   p=f(x,y,b)
   x=p[0]
   y=p[1]
