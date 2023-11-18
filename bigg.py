@@ -18,3 +18,4 @@ def f(n,x,m):
       x.append(x[k]+e)
       k+=1
       i-=1
+  return n, x
