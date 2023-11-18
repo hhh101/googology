@@ -19,3 +19,12 @@ def f(n,x,m):
       k+=1
       i-=1
   return n, x
+b=3
+x=[-1,0,1]
+y=[-1,0,999]
+while x!=[]:
+  p=f(x,y,b)
+  x=p[0]
+  y=p[1]
+  b+=1
+print(b)
